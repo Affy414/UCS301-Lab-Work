@@ -21,14 +21,14 @@ void push(int data){
 }
 int pop(){
     if(this->top == -1){
-        cout<<"Overflow\n";
+        cout<<"Underflow\n";
         return INT_LEAST16_MIN;
     }
     this->top--;
 }
 int peek(){
     if(this->top == -1){
-        cout<<"Overflow\n";
+        cout<<"Underflow\n";
         return INT_LEAST16_MIN;
     }
     return this->arr[this->top];

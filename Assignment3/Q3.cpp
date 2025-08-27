@@ -22,7 +22,7 @@ void push(char w){
 }
 int pop(){
     if(this->top == -1){
-        cout<<"Overflow\n";
+        cout<<"Underflow\n";
         return INT_LEAST16_MIN;
     }
     this->top--;
